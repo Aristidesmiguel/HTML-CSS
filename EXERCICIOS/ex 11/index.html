@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+   <h1>Midias EM HTML </h1>
+   <P>vOCE PODE MOVER O SEU NAVEGADOR QUE A IMAGEM SAI SE MANTAR!</P>
+    <picture>
+       <source media="(max-width: 100px )" srcset="imagens/Sem título2.png" type="image/png">
+       <img src="Sem título.png" alt="pequena imagem"> 
+    </picture>
+    <h1>Reproduzindo o Áudio</h1>
+    <p>Vamos apreder como se faz para por um áudio no seu site!!</p> 
+
+    <p>Outra forma de por audio</p>
+    <audio preload="metadata" autoplay controls loop > 
+        <source src="midia/musica1.mp3" type="audio/mpeg">
+        <source src="midia/musica1.ogg" type="audio/ogg">
+        <source src="midia/musica1.wav" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reproduzir o áudio <a href="midia/musica1.mp3">Clique aqui para baixar o áudio </a></p>
+    </audio>
+
+</body>
+</html>
