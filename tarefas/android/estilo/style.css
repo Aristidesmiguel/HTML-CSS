@@ -99,7 +99,7 @@ nav{
 
 nav > a{
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
@@ -109,6 +109,7 @@ nav > a{
 nav > a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
+    padding: 10px;
 }
 
 main{
@@ -127,13 +128,18 @@ main h1{
     font-family: var(--font-android);
 }
 main H2{
+    padding: 10px;
     font-family: var(--font-android);
     color: var(--cor4);
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor3), transparent);
     text-indent: 7px;
+    transition-duration: .5s;
 }
-
+main H2:hover{
+    padding: 5px;
+    transition-duration: .5s;
+}
 main img{
     width: 100%;
 }
@@ -154,6 +160,17 @@ aside > ul{
     list-style-position: inside;
     columns:2;
 }
+
+li{
+  padding: 5px;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+li:hover{
+    padding: 10px;
+    transition-duration: .5s;
+  }
 
 aside > h3{
     background-color: var(--cor4);
