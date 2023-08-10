@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+         td, th{
+            border: 2px solid black;
+            padding: 8px;
+         }
+         thead, tfoot{
+            background-color: gray;
+            color: white;
+         }
+
+         thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+         }
+
+        tbody tr:nth-child(2n){
+            background-color: rgb(201, 201, 201);
+        }
+         
+         .num{
+            text-align: right;
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População de Angola</caption>
+        <thead>
+            <tr>
+              <th scope="col">Estado</th>
+              <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+             <tr>
+                <td>Luanda</td>
+                <td class="num">30.12345</td>
+             </tr>
+             <tr>
+                <td>Bengela</td>
+                <td class="num">204.34533</td>
+             </tr>
+             <tr>
+                <td>Lunda Sul</td>
+                <td class="num">111111111</td>
+             </tr>
+             <tr>
+                <td>Lunda Norte</td>
+                <td class="num">204.34533</td>
+             </tr>
+             <tr>
+                <td>Bíe</td>
+                <td class="num">204.12345</td>
+             </tr>
+              <tr>
+                <td>Úige</td>
+                <td class="num">204.2343</td>
+             </tr>
+             <tr>
+                <td>Cabinda</td>
+                <td class="num">204.123</td>
+             </tr>
+             <tr>
+                <td>Huila</td>
+                <td class="num">22.2234</td>
+             </tr>
+             <tr>
+                <td>Cunene</td>
+                <td class="num">340000</td>
+             <tr>
+                <td>Namibe</td>
+                <td class="num">0000000</td>
+             </tr>
+                 <tr>
+                    <td>Cuansa Sul</td>
+                    <td class="num">0000001</td>
+              <tr>
+                        <td>Cuansa Norte</td>
+                        <td class="num">204.34533</td>
+                     </tr>
+                    <tr>
+                        <td>Bengo</td>
+                        <td class="num">10</td>
+                    </tr>
+                    <tr>
+                        <td>Malanje</td>
+                        <td class="num">1054</td>
+                     </tr>
+                     <tr>
+                        <td>Cuansa Norte</td>
+                        <td class="num">000000000000</td>
+                     </tr>
+                     <tr>
+                        <td>Cuando  Cubango</td>
+                        <td class="num">204.34533</td>
+                     </tr>
+                     <tr>
+                        <td>Moxico</td>
+                        <td class="num">200</td>
+                        <tr>
+                            <td>Huambo</td>
+                            <td class="num">1</td>
+                         </tr>
+                     </tr>
+                 </tr>
+             </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>
+                    Total de Habitante
+                </th>
+                <td class="num">43.900.000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
