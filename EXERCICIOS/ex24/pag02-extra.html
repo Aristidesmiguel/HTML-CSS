@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 50px;
+            
+        }
+        a{
+            font-weight: bold;
+           text-decoration: none; 
+           background-color: rgb(68, 68, 68);
+           padding: 10px;
+           color: white;
+           border-radius: 10px;
+           transition-duration: .5s;
+        }
+        a:hover{
+            background-color:  rgb(54, 54, 54) ;
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique Aqui</a>
+    <div id="saida"> </div>   
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += "<p>Aristides Miguel</p>"
+        }
+    </script>
+</body>
+</html>
