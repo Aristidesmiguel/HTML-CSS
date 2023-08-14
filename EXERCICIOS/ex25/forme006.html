@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <div>
+            <label for="estado">Estado</label>
+            <select name="Estado" id="estado">
+              <option value="" selected>*****Escolha é Nada*****</option>
+              <optgroup label="Gang dos Malucos">
+                  <option value="La">Luanda</option>
+                  <option value="ba">Bengela</option>
+                  <option value="ma">Malanje</option>
+                  <option value="aa">Bié</option>
+              </optgroup>
+
+              <optgroup label="Corra">
+                  <option value="La">Huila</option>
+                  <option value="ba">Uige</option>
+                  <option value="ma">Zango</option>
+                  <option value="aa">Matrix</option>
+              </optgroup>
+            </select>
+
+        </div>
+        <div>
+            <label for="prof">Profição</label>
+            <input type="text" name="cunanga" id="prof" list="lista">
+            <datalist id="lista">
+                <option>Asaltador de novinhas</option>
+                <option>Macolheiro da Barra</option>
+                <option>A vida da Braba</option>
+                <option>Andador de lados</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="msg">Menssagens</label>
+            <textarea name="imsg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+         </p> 
+    </form>
+</body>
+</html>

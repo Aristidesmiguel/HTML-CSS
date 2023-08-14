@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 04</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 200px;
+            margin: 10px;
+            transition-duration: .5s;
+            background-color: bisque;
+        }
+        fieldset:hover:nth-child(2){
+            width: 300px;
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="mas"> <label for="mas"> Maculino</label>
+            <input type="radio" name="sexo" id="fem"> <label for="fem"> Femenino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Espotes Favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futbool</label>  <br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label> <br>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basqueti</label> <br>
+            <input type="checkbox" name="ten" id="iten"> <label for="iten">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
