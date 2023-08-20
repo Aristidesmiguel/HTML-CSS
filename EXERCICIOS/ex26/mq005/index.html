@@ -6,11 +6,16 @@
     <title>Menu com media query</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/cor.css">
+    <link rel="stylesheet" href="estilo/query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
 </head>
-<body>
+<body onresize="medouTamanho()">
     <header>
         <h1>Site1</h1>
-        <menu>
+        <span id="icon-bar" class="material-icons md-24" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                <li><a id="cor1" href="#">Home</a></li>
                <li><a id="cor2" href="#">Páginas</a></li>
@@ -30,5 +35,22 @@
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa repudiandae exercitationem soluta ab doloribus excepturi, aliquam fugiat dolores porro omnis esse facilis natus commodi libero. Minus similique dicta perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quibusdam sunt expedita exercitationem et quam velit eius laudantium maiores ipsum possimus, modi magnam deserunt eligendi. Beatae soluta illum perferendis ratione! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </article>
     </main>
+    <script>
+
+        function medouTamanho() {
+            if (window,innerWidth >= 769){
+                itens.style.display = "block"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == "block"){
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+
+
+@media screen and (min-width: 769px){
+
+    #icon-bar{
+        display: none;
+        
+    }
+
+    #itens{
+        display: block;
+    }
+    #itens ul li{
+         display: inline-block;
+         margin: 10px;
+        
+    }
+    main{
+        width: 769px;
+    }
+}
