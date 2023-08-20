@@ -1,0 +1,21 @@
+
+#cor1:hover {
+   background-color: rgba(0, 255, 170, 0.555);
+   transition-duration: 1s;
+}
+#cor2:hover {
+   background-color: rgba(255, 0, 0, 0.295);
+   transition-duration: 1s;
+}
+#cor3:hover {
+   background-color: rgba(0, 17, 255, 0.336);
+   transition-duration: 1s;
+}
+#cor4:hover {
+  background-color: rgba(129, 129, 129, 0.438);
+  transition-duration: 1s;
+}
+#cor5:hover {
+  background-color: rgba(250, 235, 215, 0.281);
+  transition-duration: 1s;
+}

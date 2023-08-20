@@ -1,0 +1,58 @@
+
+/*Para todas as configurações padrões*/
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    #pc {display:none; }
+    #phone {display: none;}
+    #print {display: block;}
+    #tablet {display: none;}
+    #tv {display: none;}
+    main{
+        border: 2px solid black;
+        width: 700px;
+    }
+    main::after{
+        content: "Aristides Miguel";
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /*tablet*/
+    body{
+        background-image: url("../image/back-tablet.jpg");
+        transition-duration: 1s;
+    }
+    #pc {display: none;}
+    #phone {display: none;}
+    #print {display: none;}
+    #tablet {display: block; transition-duration: 1s;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /*desktops*/
+    body{
+        background-image: url("../image/back-pc.jpg");
+        transition-duration: 1s;
+    }
+    #pc {display: block; transition-duration: 1s;}
+    #phone {display: none;}
+    #print {display: none;}
+    #tablet {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*telas grandes*/
+    body{
+        background-image: url("../image/back-tv.jpg");
+        transition-duration: 1s;
+    }
+    #pc {display: none;}
+    #phone {display: none;}
+    #print {display: none;}
+    #tablet {display: none;}
+    #tv {display: block; transition-duration: 1s;}
+}
