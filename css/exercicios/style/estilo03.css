@@ -1,0 +1,28 @@
+ul{
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    list-style-type: none;
+}
+li{
+    float: left;
+}
+li a{
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover, .Dropdown:hover .btn{
+    background-color: aqua;
+}
+li.Dropdown{
+    display: inline-block;
+}
+.content{
+    position: absolute;
+}

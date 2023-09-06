@@ -1,0 +1,39 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    height: 60px;
+    padding: 24px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    height: 60px;
+    padding: 24px;
+}
+.nav3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    height: 60px;
+    padding: 24px;
+}
+.nav4{
+    display: flex;
+    justify-content: center;
+    
+    background-color: aqua;
+    height: 60px;
+    padding: 24px;
+}

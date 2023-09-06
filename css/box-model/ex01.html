@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+       .container{
+          width: 400px;
+          height: 500px;
+          padding: 20px;
+          border: 2px solid black;
+          margin: auto;
+          background-color: antiquewhite;
+          border-bottom-right-radius: 20px;
+          border-top-left-radius: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
+       }
+       img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+       }
+       .f{
+         width: 80%;
+         height: 30px;
+         padding-left: 10px;
+         text-indent: 30px;
+       }
+       .pai{
+        display: flex;
+        flex-direction: row;
+        
+       }
+       .mae{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+       h1{
+        text-align: center;
+       }
+       p{
+        text-indent: 30px;
+       }
+       div .i{
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        cursor: pointer;
+       }
+       .i:hover{
+        background-color: aquamarine;
+       }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <a href="#">
+            <div class="i"></div>
+        </a>
+         <h1>Aristides Miguel</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt necessitatibus quos excepturi, esse quasi illo vel accusantium amet quia quibusdam et? Delectus veritatis aspernatur tempora animi amet, temporibus facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit sequi accusantium eum placeat dolorum, temporibus recusandae reiciendis qui quibusdam fugit unde mollitia provident, nisi voluptatum quos explicabo soluta molestiae!</p>
+         <div class="pai">
+            <img src="311295551_5616867858381121_3307847690760713270_n (2).jpg" alt="">
+            <div class="f">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cumque saepe quidem deserunt ullam veniam eos accusantium consequuntur eaque distinctio numquam aliquid dolorem non repudiandae tempora, veritatis sequi atque libero.</div>
+        </div>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, corrupti ducimus, ipsam saepe beatae iusto exercitationem eveniet ullam recusandae magni cupiditate? Dolor commodi nihil consectetur, odio odit quas maxime sunt.</p>
+         <div class="mae">
+             <h3>Assinatura:_________</textarea></h3>
+             <h4>Luanda 26 de Agosto <br> de 2023</h4>
+         </div>
+     </div>
+</body>
+</html>

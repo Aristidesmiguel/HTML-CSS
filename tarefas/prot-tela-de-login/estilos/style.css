@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #443a53;
+    --cor2: #312e42;
+    --font1: arial, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font1);
+    box-sizing: border-box;
+}
+html, body{
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2) );
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section{
+    transition-duration: 1s; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: aliceblue;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    transition: width .5s, height .5s linear;
+    transition-timing-function: ease;
+}
+section .image{
+    display: block;
+    background: #362E42 url("../image/foto.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+section .form{
+    display: block;
+    padding: 10px;
+}
+.form h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px;
+}
+#entrar{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #3a3a3a;
+    color: white;
+     border: none;
+     border-radius: 7px;
+     cursor: pointer;
+     transition-duration: 1s;
+}
+#entrar:hover{
+    transition-duration: 1s;
+    background-color: #4e4e4e;
+}
+#botao{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #00000000;
+    color: black;
+     border: none;
+     border-radius: 7px;
+     cursor: pointer;
+     transition-duration: 1s;
+     text-align: center;
+     padding: 9px;
+     text-decoration: none;
+     margin-top: 6px;
+     box-shadow: 0px 2px 2px black;
+     
+}
+#botao:hover{
+    color: white;
+    transition-duration: 1s;
+    background-color: #4e4e4e;
+}
+.campo{
+    background-color: #312e42;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin: 6px 0px;
+
+}
+.campo span{
+    background-color: #4e4e4e;
+    color: white;
+    height: 40px;
+     font-size: 2em;
+     padding: 5px;
+}
+.campo input::placeholder{
+    color: black;
+}
+.campo input{
+    height: 100%;
+    border-radius: 7px;
+    background-color: #acacac;
+    border: 0px;
+    width: calc(100% - 60px);
+    transform: translateY(-13px);
+}
